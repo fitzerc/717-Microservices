@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "717-Microservices.ManageCustomerService", "717-Microservices.ManageCustomerService\717-Microservices.ManageCustomerService.sfproj", "{34B9E141-D581-43F7-A321-92CE7AA93B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageCustomers", "ManageCustomers\ManageCustomers.csproj", "{51ADA181-5307-41A9-8C00-BF420C51FD54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{41EAF6DC-1B78-45AB-9CEB-233B24D07521}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "717-Microservices.Shared", "..\717-Microservices.Shared\717-Microservices.Shared\717-Microservices.Shared.csproj", "{983E0A30-F09D-434E-BA55-69A50A2F5E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|Any CPU.Build.0 = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|x64.ActiveCfg = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|x64.Build.0 = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Debug|x64.Deploy.0 = Debug|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|Any CPU.ActiveCfg = Release|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|Any CPU.Build.0 = Release|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|Any CPU.Deploy.0 = Release|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|x64.ActiveCfg = Release|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|x64.Build.0 = Release|x64
+		{34B9E141-D581-43F7-A321-92CE7AA93B3A}.Release|x64.Deploy.0 = Release|x64
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Debug|x64.Build.0 = Debug|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Release|x64.ActiveCfg = Release|Any CPU
+		{51ADA181-5307-41A9-8C00-BF420C51FD54}.Release|x64.Build.0 = Release|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Debug|x64.Build.0 = Debug|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Release|x64.ActiveCfg = Release|Any CPU
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{983E0A30-F09D-434E-BA55-69A50A2F5E6A} = {41EAF6DC-1B78-45AB-9CEB-233B24D07521}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CE67888-388E-4E9E-B4BA-2A1449CF33D7}
+	EndGlobalSection
+EndGlobal
