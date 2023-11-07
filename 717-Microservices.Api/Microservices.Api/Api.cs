@@ -231,12 +231,18 @@ internal sealed class Api : StatelessService
                         try
                         {
                             var (customers, err) = await manageCustSvc.GetCustomersAsync();
-                            if (err != null)
+                            if (err != null || customers is null)
                             {
-                                return Results.BadRequest(err);
+                                return Results.BadRequest(err ?? "unable to get customers");
                             }
 
-                            return Results.Ok(customers);
+                            List<Customer> customersList = new();
+                            foreach (var c in customers)
+                            {
+                                customersList.Add(new Customer(c.id, c.name, c.email));
+                            }
+
+                            return Results.Ok(customersList);
                         }
                         catch (Exception e)
                         {
@@ -288,6 +294,7 @@ internal sealed class Api : StatelessService
     public record AddProductRequest(string name, string description, decimal price);
     public record PlaceOrderRequest(string customerEmail, string customerName, List<string> products);
     public record Product(int Id, string Name, string Description, decimal Cost);
+    public record Customer(int Id, string Name, string Email);
 
     /// <summary>
     /// Finds the ASP .NET Core HTTPS development certificate in development environment. Update this method to use the appropriate certificate for production environment.
